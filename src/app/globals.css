@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0A0A0A;
+  --surface: #1A1A1A;
+  --surface-raised: #202020;
+  --codeblock: #121212;
+  --foreground: #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, 0.62);
+  --text-tertiary: rgba(255, 255, 255, 0.38);
+  --primary: #FFFFFF;
+  --primary-foreground: #0A0A0A;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --fog: #7D8187;
+  --accent: #FF6308;
+  --accent-soft: rgba(255, 99, 8, 0.12);
+  --twilight: #A689FA;
+
+  --c-backend: #FF6308;
+  --c-frontend: #A689FA;
+  --c-database: #9CB8DD;
+  --c-devops: #4ADE80;
+  --c-design: #FFD085;
+
+  --syntax-keyword: #F97583;
+  --syntax-string: #9ECBFF;
+  --syntax-function: #B392F0;
+  --syntax-comment: #8D867E;
+}
+
+[data-theme="light"],
+.light {
+  --background: #FFFFFF;
+  --surface: #F9F8F6;
+  --surface-raised: #F1F2F6;
+  --codeblock: #F4F4F5;
+  --foreground: #0A0A0A;
+  --text-secondary: rgba(10, 10, 10, 0.65);
+  --text-tertiary: rgba(10, 10, 10, 0.45);
+  --primary: #0A0A0A;
+  --primary-foreground: #FFFFFF;
+  --border-subtle: rgba(10, 10, 10, 0.08);
+  --border-strong: rgba(10, 10, 10, 0.14);
+  --accent-soft: rgba(255, 99, 8, 0.1);
+
+  --syntax-keyword: #D73A49;
+  --syntax-string: #032F62;
+  --syntax-function: #6F42C1;
+  --syntax-comment: #6A737D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "rlig" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom styled underline */
+.hero-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-underline::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  right: 6px;
+  bottom: -0.06em;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #FFD085, #FF6308 35%, #7D8187 70%, #36383A);
+}
+
+/* Hero Glows */
+.hero-glow {
+  position: absolute;
+  left: 50%;
+  top: -460px;
+  width: 1000px;
+  height: 900px;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, rgba(255, 99, 8, 0.12), rgba(108, 40, 217, 0.07) 50%, transparent);
+  pointer-events: none;
+}
+
+.contact-glow {
+  position: absolute;
+  left: 50%;
+  top: 260px;
+  width: 900px;
+  height: 700px;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, rgba(255, 99, 8, 0.14), rgba(108, 40, 217, 0.06) 50%, transparent);
+  pointer-events: none;
+}
+

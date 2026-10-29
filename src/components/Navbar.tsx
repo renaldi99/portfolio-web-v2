@@ -7,7 +7,7 @@ import { Sun, Moon, ArrowUpRight, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const NAV_LINKS = [
-  { label: 'Index', href: '#home' },
+  { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Work', href: '#work' },
   { label: 'Stack', href: '#stack' },

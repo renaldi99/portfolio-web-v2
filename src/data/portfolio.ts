@@ -22,7 +22,7 @@ export const PERSONAL_INFO = {
   },
   about: {
     statement:
-      "I'm a developer who bridges thoughtful UI design with scalable engineering.",
+      "I'm a Full-stack Engineer who bridges thoughtful UI design with scalable engineering.",
     paragraphs: [
       'My name is Renaldi. Based in Indonesia, I specialize in crafting intuitive UI/UX design, modern web development, and cross-platform mobile applications. I have partnered with businesses and startups to design and engineer web & mobile products that accelerate their growth.',
       'I am deeply passionate about technology and continuous learning — superficial knowledge is never enough for me. With strong product thinking, attention to detail, and collaborative teamwork, I am ready to bring your next digital vision to life.',
@@ -103,7 +103,7 @@ export const PROJECTS: Project[] = [
     categoryLabel: '03 / Web Development',
     description:
       'Interior & furniture e-commerce with a room-based catalog, interactive product carousels and a seamless cart flow.',
-    image: '/images/unlabs.jpg',
+    image: '/images/unlabs.png',
     tags: ['E-Commerce', 'Tailwind CSS', 'JavaScript'],
     link: 'https://unlabs-store.netlify.app/',
     featured: false,
